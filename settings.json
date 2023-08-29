@@ -12,16 +12,12 @@
   "[typescript]": {
     "editor.colorDecorators": true
   },
-  "auto-rename-tag.activationOnLanguage": ["*"],
+  "auto-rename-tag.activationOnLanguage": [
+    "*"
+  ],
   "blockman.n01LineHeight": 0,
   "breadcrumbs.enabled": true,
   "city-lights-icons-vsc.hidesExplorerArrows": true,
-  "colorize.languages": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "css.validate": true,
   "customizeUI.titleBar": "frameless",
   "diffEditor.diffAlgorithm": "advanced",
@@ -36,7 +32,13 @@
     "source.fixAll.eslint": true
     // "source.removeUnusedImports": true
   },
-
+  "emmet.includeLanguages": {
+    "html": "html",
+    "rust": "html",
+    "php": "html",
+    "javascript": "html",
+    "twig": "html",
+},
   "editor.codeLensFontSize": 16,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
@@ -65,7 +67,9 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "all",
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.scrollBeyondLastLine": false,
   "editor.showFoldingControls": "always",
   "editor.snippetSuggestions": "top",
@@ -80,19 +84,13 @@
   "editor.unfoldOnClickAfterEndOfLine": true,
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "editor.wordWrap": "off",
-  "emmet.includeLanguages": {
-    "javascript": "html"
-},
-  "emmet.preferences": {
-    "jsx.singleQuote": true
-  },
-
-  "emmet.syntaxProfiles": {
-    "postcss": "css"
-  },
   "emmet.showAbbreviationSuggestions": true,
   "emmet.showSuggestionsAsSnippets": true,
-  "errorLens.enabledDiagnosticLevels": ["warning", "info", "hint"],
+  "errorLens.enabledDiagnosticLevels": [
+    "warning",
+    "info",
+    "hint"
+  ],
   "errorLens.messageTemplate": "($source) $message",
   "errorLens.removeLinebreaks": false,
   "esQuotes.defaultQuote": "'",
@@ -179,16 +177,6 @@
   },
   "extensions.autoUpdate": true,
   "extensions.ignoreRecommendations": true,
-  "files.associations": {
-    "*.atml": "html",
-    "*.njk": "html",
-    "*.fish": "powershell",
-    "*.js": "javascript",
-    "*.mdx": "markdown",
-    ".babelrc": "json",
-    ".huskyrc": "json",
-    ".env*": "dotenv"
-  },
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 6000,
   "files.exclude": {
@@ -223,284 +211,31 @@
     "suppressGitMissingWarning": true
   },
   "gitlens.blame.ignoreWhitespace": true,
-  "gitlens.codeLens.scopes": ["document", "containers", "blocks"],
+  "gitlens.codeLens.scopes": [
+    "document",
+    "containers",
+    "blocks"
+  ],
   "gitlens.keymap": "alternate",
   "gitlens.views.repositories.files.layout": "list",
   "incrementor.enums": [
-    ["false", "true"],
-    ["let", "const"],
-    ["flex", "inline-flex", "block", "inline-block", "inline", "none"]
+    [
+      "false",
+      "true"
+    ],
+    [
+      "let",
+      "const"
+    ],
+    [
+      "flex",
+      "inline-flex",
+      "block",
+      "inline-block",
+      "inline",
+      "none"
+    ]
   ],
-  "javascript.inlayHints.enumMemberValues.enabled": true,
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  "javascript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterTypes.enabled": true,
-  "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  "javascript.inlayHints.variableTypes.enabled": true,
-  "javascript.preferences.importModuleSpecifier": "relative",
-  "javascript.preferences.importModuleSpecifierEnding": "minimal",
-  "javascript.preferences.quoteStyle": "single",
-  "javascript.suggest.completeFunctionCalls": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "js/ts.implicitProjectConfig.experimentalDecorators": true,
-  "keyboard.touchbar.enabled": true,
-  "liveshare.featureSet": "stable",
-  "liveshare.showInStatusBar": "whileCollaborating",
-  "markdown.validate.enabled": true,
-  "merge-conflict.autoNavigateNextConflict.enabled": true,
-  "merge-conflict.diffViewPosition": "Below",
-  "php.suggest.basic": false,
-  "php.validate.enable": false,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "problems.defaultViewMode": "table",
-  "projectManager.git.baseFolders": [],
-  "projectManager.groupList": true,
-  "projectManager.sortList": "Recent",
-  "redhat.telemetry.enabled": false,
-  "references.preferredLocation": "view",
-  "scss.validate": false,
-  "search.collapseResults": "auto",
-  "search.followSymlinks": false,
-  "search.quickOpen.includeSymbols": false,
-  "search.showLineNumbers": true,
-  "search.smartCase": true,
-  "security.workspace.trust.enabled": false,
-  "surround.custom": {
-    "console-log": {
-      "description": "console.log( ... )",
-      "disabled": false,
-      "label": "console.log",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "astro"
-      ],
-      "snippet": "console.log(`$TM_SELECTED_TEXT`, $TM_SELECTED_TEXT)"
-    },
-    "describe": {
-      "description": "describe('${1:name}', () => { ... })",
-      "disabled": false,
-      "label": "describe",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-      ],
-      "snippet": "describe('${1:name}', () => {\n\t$TM_SELECTED_TEXT\n})$0"
-    },
-    "errorBoundary": {
-      "description": "<ErrorBoundary>",
-      "disabled": false,
-      "label": "errorBoundary",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-      ],
-      "snippet": "<ErrorBoundary>$TM_SELECTED_TEXT</ErrorBoundary>"
-    },
-    "es6StringSubstition": {
-      "description": "${...}",
-      "disabled": false,
-      "label": "es6StringSubstition",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "astro"
-      ],
-      "snippet": "${$TM_SELECTED_TEXT}"
-    },
-    "function": {
-      "description": "$( ... )",
-      "disabled": false,
-      "label": "function",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "astro"
-      ],
-      "snippet": "$1($TM_SELECTED_TEXT)$0"
-    },
-    "jsxConditional": {
-      "description": "{x && ( ... )}",
-      "disabled": false,
-      "label": "jsxConditional",
-      "languageIds": ["javascriptreact", "typescriptreact", "astro"],
-      "snippet": "{$0 && ($TM_SELECTED_TEXT)}"
-    },
-    "jsxConditional2": {
-      "description": "{x ? ( ... ) : null}",
-      "disabled": false,
-      "label": "better jsxConditional",
-      "languageIds": ["javascriptreact", "typescriptreact", "astro"],
-      "snippet": "{$0 ? ($TM_SELECTED_TEXT) : null}"
-    },
-    "markdown-link": {
-      "description": "[]( ... )",
-      "disabled": false,
-      "label": "Markdown link [url]",
-      "snippet": "[$0]($TM_SELECTED_TEXT)"
-    },
-    "markdown-link-alt": {
-      "description": "[ ... ]()",
-      "disabled": false,
-      "label": "Markdown link [text]",
-      "snippet": "[$TM_SELECTED_TEXT]($0)"
-    },
-    "number": {
-      "description": "Number( ... )",
-      "disabled": false,
-      "label": "Number",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "astro"
-      ],
-      "snippet": "Number($TM_SELECTED_TEXT)"
-    },
-    "parse": {
-      "description": "JSON.parse( ... )",
-      "disabled": false,
-      "label": "JSON.parse",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "astro"
-      ],
-      "snippet": "JSON.parse($TM_SELECTED_TEXT)$0"
-    },
-    "reactFragment": {
-      "description": "<Fragment>",
-      "disabled": false,
-      "label": "fragment",
-      "languageIds": ["javascriptreact", "typescriptreact"],
-      "snippet": "<Fragment>$TM_SELECTED_TEXT</Fragment>"
-    },
-    "reactFragment2": {
-      "description": "<>",
-      "disabled": false,
-      "label": "fragment (simple)",
-      "languageIds": ["javascriptreact", "typescriptreact"],
-      "snippet": "<>$TM_SELECTED_TEXT</>"
-    },
-    "reactUseMemo": {
-      "description": "useMemo",
-      "disabled": false,
-      "label": "useMemo",
-      "languageIds": ["javascriptreact", "typescriptreact"],
-      "snippet": "useMemo(() => $TM_SELECTED_TEXT, [])"
-    },
-    "reactUseCallback": {
-      "description": "useCallback",
-      "disabled": false,
-      "label": "useCallback",
-      "languageIds": ["javascriptreact", "typescriptreact"],
-      "snippet": "useCallback(() => $TM_SELECTED_TEXT, [])"
-    },
-    "reactForwardRef": {
-      "description": "forwardRef",
-      "disabled": false,
-      "label": "forwardRef",
-      "languageIds": ["javascriptreact", "typescriptreact"],
-      "snippet": "forwardRef<$1>($TM_SELECTED_TEXT)"
-    },
-    "stringify": {
-      "description": "JSON.stringify( ... )",
-      "disabled": false,
-      "label": "JSON.stringify",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "svelte",
-        "html",
-        "astro"
-      ],
-      "snippet": "JSON.stringify($TM_SELECTED_TEXT)$0"
-    },
-    "suspense": {
-      "description": "<Suspense>",
-      "disabled": false,
-      "label": "suspense",
-      "languageIds": ["javascriptreact", "typescriptreact"],
-      "snippet": "<Suspense fallback={<Loader />}>$TM_SELECTED_TEXT</Suspense>"
-    },
-    "svelteIf": {
-      "description": "{#if}{/if}",
-      "disabled": false,
-      "label": "{#if}",
-      "languageIds": ["svelte"],
-      "snippet": "{#if $1}$TM_SELECTED_TEXT{/if}"
-    },
-    "svelteIfElse": {
-      "description": "{#if}{:else}{/if}",
-      "disabled": false,
-      "label": "{#if}{:else}",
-      "languageIds": ["svelte"],
-      "snippet": "{#if $1}$TM_SELECTED_TEXT{:else}$2{/if}"
-    },
-    "JSXBox": {
-      "description": "<Box>",
-      "disabled": false,
-      "label": "box",
-      "languageIds": ["javascriptreact", "typescriptreact", "astro"],
-      "snippet": "<Box>$TM_SELECTED_TEXT</Box>"
-    },
-    "JSXContainer": {
-      "description": "<Container>",
-      "disabled": false,
-      "label": "container",
-      "languageIds": ["javascriptreact", "typescriptreact", "astro"],
-      "snippet": "<Container>$TM_SELECTED_TEXT</Container>"
-    },
-    "JSXFlex": {
-      "description": "<Flex>",
-      "disabled": false,
-      "label": "flex",
-      "languageIds": ["javascriptreact", "typescriptreact", "astro"],
-      "snippet": "<Flex>$TM_SELECTED_TEXT</Flex>"
-    },
-    "JSXGrid": {
-      "description": "<Grid>",
-      "disabled": false,
-      "label": "grid",
-      "languageIds": ["javascriptreact", "typescriptreact", "astro"],
-      "snippet": "<Grid>$TM_SELECTED_TEXT</Grid>"
-    },
-    "TSGeneric": {
-      "description": "Generic<>",
-      "disabled": false,
-      "label": "TS Generic",
-      "languageIds": ["typescript", "typescriptreact", "astro"],
-      "snippet": "$1<$TM_SELECTED_TEXT, $0>"
-    },
-    "rem-polished": {
-      "description": "${rem($)}",
-      "disabled": false,
-      "label": "rem",
-      "languageIds": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-      ],
-      "snippet": "${rem($TM_SELECTED_TEXT)}"
-    }
-  },
   "svelte.enable-ts-plugin": true,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.enableBell": true,
@@ -562,8 +297,14 @@
   "totalTypeScript.hideAllTips": true,
   "totalTypeScript.hideBasicTips": true,
   "emmet.triggerExpansionOnTab": true,
-  "cssCustomProperties.languages": ["css"],
-  "cssCustomProperties.files": [["src/**/*.css"]],
+  "cssCustomProperties.languages": [
+    "css"
+  ],
+  "cssCustomProperties.files": [
+    [
+      "src/**/*.css"
+    ]
+  ],
   "explorer.fileNesting.enabled": true,
   "editor.suggest.shareSuggestSelections": true,
   "diffEditor.renderSideBySide": false,
@@ -577,41 +318,15 @@
   "gitlens.graph.dimMergeCommits": true,
   "gitlens.graph.showRemoteNames": true,
   "gitlens.mode.statusBar.alignment": "left",
-  "errorLens.excludeBySource": ["eslint(@typescript-eslint/no-unused-vars)"],
+  "errorLens.excludeBySource": [
+    "eslint(@typescript-eslint/no-unused-vars)"
+  ],
   "dotenv.enableAutocloaking": false,
   "editor.renderControlCharacters": false,
   "window.nativeTabs": true,
-  "colorize.hide_current_line_decorations": false,
-  "colorInfo.languages": [
-    {
-      "selector": "css",
-      "colors": "css"
-    },
-    {
-      "selector": "sass",
-      "colors": "css"
-    },
-    {
-      "selector": "scss",
-      "colors": "css"
-    },
-    {
-      "selector": "less",
-      "colors": "css"
-    },
-    {
-      "selector": "ts",
-      "colors": "css"
-    },
-    {
-      "selector": "js",
-      "colors": "css"
-    }
-  ],
   "editor.suggest.showReferences": false,
-  "javascript.referencesCodeLens.enabled": true,
-  "javascript.referencesCodeLens.showOnAllFunctions": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
-  "workbench.colorTheme": "Julia (Monokai Classic)"
+  "workbench.colorTheme": "Julia (Monokai Classic)",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }
