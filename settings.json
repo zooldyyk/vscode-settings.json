@@ -38,7 +38,7 @@
     "php": "html",
     "javascript": "html",
     "twig": "html",
-},
+  },
   "editor.codeLensFontSize": 16,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
@@ -284,7 +284,7 @@
   "workbench.editor.tabCloseButton": "left",
   "workbench.editor.wrapTabs": true,
   "workbench.fontAliasing": "antialiased",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "vscode-great-icons",
   "workbench.layoutControl.enabled": true,
   "workbench.list.horizontalScrolling": true,
   "workbench.list.defaultFindMode": "filter",
@@ -329,4 +329,21 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  "terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+  ],
+  "julia.symbolCacheDownload": true,
+  "julia.enableTelemetry": true,
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "workbench.settings.applyToAllProfiles": [
+  
+  ],
 }
