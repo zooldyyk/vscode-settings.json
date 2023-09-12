@@ -325,7 +325,6 @@
   "editor.renderControlCharacters": false,
   "window.nativeTabs": true,
   "editor.suggest.showReferences": false,
-  "workbench.colorTheme": "Julia (Monokai Classic)",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -346,4 +345,5 @@
   "workbench.settings.applyToAllProfiles": [
   
   ],
+  "workbench.colorTheme": "Julia (Monokai Classic)",
 }
